@@ -7,6 +7,7 @@ import re
 import pandas as pd
 import pymongo
 from pymongo.mongo_client import MongoClient
+import sys
 
 #logging.basicConfig(filename="scrapper.log" , level=logging.INFO)
 
@@ -81,4 +82,4 @@ def index():
             return render_template("error.html")
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0")
+    application.run('localhost', 5000,debug=True)
