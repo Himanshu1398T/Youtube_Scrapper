@@ -10,7 +10,7 @@ from pymongo.mongo_client import MongoClient
 
 #logging.basicConfig(filename="scrapper.log" , level=logging.INFO)
 
-app = Flask(__name__)
+application = app = Flask(__name__)
 
 @app.route("/", methods = ['GET'])
 def homepage():
