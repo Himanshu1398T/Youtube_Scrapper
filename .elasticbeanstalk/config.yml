@@ -7,7 +7,7 @@ global:
   phases:
   pre_build:
     commands:
-      - pip install -r my-api/requirements.txt
+      - pip install -r requirements.txt
   default_ec2_keyname: null
   default_platform: Python 3.7
   default_region: us-east-1
