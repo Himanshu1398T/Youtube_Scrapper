@@ -12,6 +12,7 @@ import sys
 #logging.basicConfig(filename="scrapper.log" , level=logging.INFO)
 
 application = app = Flask(__name__)
+CORS(app)
 
 @app.route("/", methods = ['GET'])
 def homepage():
